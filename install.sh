@@ -1,5 +1,6 @@
 #!/bin/bash
 
+CURRENT_DIR=$(dirname "$0")
 
 if [ -d ${HOME}/.tmux ];
 then
@@ -7,7 +8,7 @@ then
 fi
 git submodule update --init --recursive
 mkdir -p ${HOME}/.tmux/plugins
-ln -sf `pwd`/tpm ${HOME}/.tmux/plugins/tpm
+ln -sf ${CURRENT_DIR}/tpm ${HOME}/.tmux/plugins/tpm
 
-ln -f `pwd`/tmux.conf ${HOME}/.tmux.conf
+ln -f ${CURRENT_DIR}/tmux.conf ${HOME}/.tmux.conf
 
