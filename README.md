@@ -18,3 +18,14 @@ Recommend
 ```
 ./install.sh
 ```
+
+ADDITION
+========
+
+`with tmuxinator config`
+
+```
+gem install tmuxinator
+tmuxinator new [project name]  # create or update config
+tmuxinator start pproject name]
+```
