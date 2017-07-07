@@ -12,6 +12,7 @@ then
 fi
 mkdir -p ${HOME}/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo 'exit 0' >> ~/.tmux/plugins/tpm/tpm
 
 ln -f ${CURRENT_DIR}/tmux.conf ${HOME}/.tmux.conf
 
