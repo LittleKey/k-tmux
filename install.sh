@@ -6,7 +6,7 @@ if [ -d ${HOME}/.tmux ];
 then
   today=`date +%Y%m%d`
   if $FOR_VIM; then
-    for i in ${HOME}/.tmux.conf ${HOME}/.tmux; do [ -e $i ] && [ ! -L $i ] && mv $i $i.$today; done
+    for i in ${HOME}/.tmux.conf ${HOME}/.tmux; do [ -e $i ] && [ ! -L $i ] && mv -f $i $i.$today; done
     for i in ${HOME}/.tmux.conf ${HOME}/.tmux ; do [ -L $i ] && unlink $i ; done
   fi
 fi
