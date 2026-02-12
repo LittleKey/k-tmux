@@ -16,7 +16,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo 'exit 0' >>~/.tmux/plugins/tpm/tpm
 
 ln -f ${CURRENT_DIR}/tmux.conf ${HOME}/.tmux.conf
-mkdir -p ${HOME}/.config/tmux
+ln -sf ${HOME}/.tmux ${HOME}/.config/tmux
 ln -f ${HOME}/.tmux.conf ${HOME}/.config/tmux/tmux.conf
 
 # install plugin and reload config
